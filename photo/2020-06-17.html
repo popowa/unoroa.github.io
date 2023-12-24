@@ -1,0 +1,850 @@
+    
+      <!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>UnOffcial ROA BulletinBoard</title>
+  </head>
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container-fluid bbdata">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">3時間おきにデータを更新します。本サイトについて、また要望（検索から外して欲しい等）は<a href="/about.html">こちらを</a>ご覧ください。</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">目次</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/ROA2120" class="text-white">
+              <svg class="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <rect width="11" height="9" x="2.5" y="7" rx="2"/>
+                <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+              </svg> 潜航機動隊 /</a>
+              <a href="https://twitter.com/senkou2120" class="text-white">
+                <svg class="bi bi-volume-up-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                  <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"/>
+                  <path fill-rule="evenodd" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                </svg> 管制室</a></li>
+            <li><a href="/member.html" class="text-white">
+              <svg class="bi bi-person-bounding-box" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg> 機動隊員一覧</a></li>
+            <li><a href="/photo/index.html" class="text-white">
+              <svg class="bi bi-card-image" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                <path d="M10.648 7.646a.5.5 0 0 1 .577-.093L15.002 9.5V13h-14v-1l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71z"/>
+                <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              </svg> 隊員の活動履歴</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between bbdata">
+      <a href="/index.html" class="navbar-brand d-flex align-items-center ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>UnOffcial ROA BulletinBoard</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    
+    <main role="main">
+      <div class="album py-5 bg-light">
+        <div class="container-fluid bbdata bbcontent">
+          <div class="row">
+            <div class="col-md-12">
+
+              <h2>
+                <svg class="bi bi-calendar-date-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM0 5h16v9a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5zm9.336 7.79c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm.066-2.544c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2zm-2.957-2.89v5.332H5.77v-4.61h-.012c-.29.156-.883.52-1.258.777V8.16a12.6 12.6 0 0 1 1.313-.805h.632z"/>
+                </svg>
+                2020/06/17の活動写真 </h2>
+              <p class="font-weight-lighter">画像表示は1枚目のみです  <svg class="bi bi-card-image" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                <path d="M10.648 7.646a.5.5 0 0 1 .577-.093L15.002 9.5V13h-14v-1l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71z"/>
+                <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              </svg> <a href="/photo/index.html">隊員の活動履歴</a>
+              <svg class="bi bi-pencil-square" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              Last updated: 2020-06-17 23:50:01.518719+09:00
+            </p>
+                  
+                    <div class="row">
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+危機 https://t.co/JCblYiw77W
+        <a href=""></a></p>
+        &mdash; 是正店舗 (@5959_mazui)
+        <a href="https://twitter.com/5959_mazui/status/1272907696811974656?ref_src=twsrc%5Etfw">Tue Jun 16 15:03:39 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 FAです⋯メッチャスキです⋯かわいい⋯涙 https://t.co/qa5BbI1sea
+        <a href=""></a></p>
+        &mdash; あまは🐳 (@hkr__15)
+        <a href="https://twitter.com/hkr__15/status/1272910702118830080?ref_src=twsrc%5Etfw">Tue Jun 16 15:15:35 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 https://t.co/vS8hOCJ0Bh
+        <a href=""></a></p>
+        &mdash; つばめ (@schwalbe_acid)
+        <a href="https://twitter.com/schwalbe_acid/status/1272912797311983617?ref_src=twsrc%5Etfw">Tue Jun 16 15:23:55 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120
+今日は第三大隊の皆様です。
+が、人数多くてとりあえず半分だけ… https://t.co/zYpFSLzU6v
+        <a href=""></a></p>
+        &mdash; ぅゆさ (@cdDu7l6cIzWEq4H)
+        <a href="https://twitter.com/cdDu7l6cIzWEq4H/status/1272913237957160960?ref_src=twsrc%5Etfw">Tue Jun 16 15:25:40 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 https://t.co/iuV7wWfs6L
+        <a href=""></a></p>
+        &mdash; 亀DOPE (@oyatsu_krps)
+        <a href="https://twitter.com/oyatsu_krps/status/1272915309196832769?ref_src=twsrc%5Etfw">Tue Jun 16 15:33:53 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 義務教育くらいしか受けられてないと思うのでエムもたまにリンゴ先生に教わりたいという絵です https://t.co/QqTYT6F34D
+        <a href=""></a></p>
+        &mdash; 新乃 (@niino_eotp)
+        <a href="https://twitter.com/niino_eotp/status/1272920941467582464?ref_src=twsrc%5Etfw">Tue Jun 16 15:56:16 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+ヘビガラがヘビスモであることに対し懸命に弁明しているシーンです https://t.co/THzhvSUdXp
+        <a href=""></a></p>
+        &mdash; †救われたくばCSを描きなさい† (@bias_kikaku)
+        <a href="https://twitter.com/bias_kikaku/status/1272922633042923521?ref_src=twsrc%5Etfw">Tue Jun 16 16:03:00 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 暫定　#大切な人に一緒に死のうと言われた時のうちの子の反応 https://t.co/zptXiAP1XI
+        <a href=""></a></p>
+        &mdash; よたば (@yo_t7a)
+        <a href="https://twitter.com/yo_t7a/status/1272923610819092480?ref_src=twsrc%5Etfw">Tue Jun 16 16:06:53 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 細かい世界観関係なさそうなところから詰めていこうとおもってとりあえずやりながら考えた　普段絶対考えないだろうなみたいなところまで詰められてよいな…… https://t.co/qnwZlbcRT7
+        <a href=""></a></p>
+        &mdash; しめかわ (@erosimeji)
+        <a href="https://twitter.com/erosimeji/status/1272924064722501633?ref_src=twsrc%5Etfw">Tue Jun 16 16:08:41 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">⁦@ROA2120⁩ 
+その瞬間、閃くものがあった─── https://t.co/S0qtnbsyqk
+        <a href=""></a></p>
+        &mdash; ベクトル汍☀️ (@S_O_D_A_soffice)
+        <a href="https://twitter.com/S_O_D_A_soffice/status/1272929678299287559?ref_src=twsrc%5Etfw">Tue Jun 16 16:30:59 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 セツカの六層時代の家族について考えるなどしていた https://t.co/MKnWskqvc7
+        <a href=""></a></p>
+        &mdash; 紫▲ (@lemoneuron_e)
+        <a href="https://twitter.com/lemoneuron_e/status/1272933947089936384?ref_src=twsrc%5Etfw">Tue Jun 16 16:47:57 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 https://t.co/DEip2Lht8p
+        <a href=""></a></p>
+        &mdash; おとっぱ (@108to8)
+        <a href="https://twitter.com/108to8/status/1272935034312224768?ref_src=twsrc%5Etfw">Tue Jun 16 16:52:16 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+既出のアオアシ達 https://t.co/WbmIfUtBSZ
+        <a href=""></a></p>
+        &mdash; ベクトル汍☀️ (@S_O_D_A_soffice)
+        <a href="https://twitter.com/S_O_D_A_soffice/status/1272936163364331521?ref_src=twsrc%5Etfw">Tue Jun 16 16:56:46 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 🐱 https://t.co/8uAbzm3K0j
+        <a href=""></a></p>
+        &mdash; 🌺薄井ぺら🌺 (@D_usui00)
+        <a href="https://twitter.com/D_usui00/status/1272941471247695873?ref_src=twsrc%5Etfw">Tue Jun 16 17:17:51 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120
+仮眠時間で絵を描くと大体この辺で力尽きるから毎度清書が完成しない https://t.co/cTqnAy8Otq
+        <a href=""></a></p>
+        &mdash; CABIN.8mg (@CABIN_8mg)
+        <a href="https://twitter.com/CABIN_8mg/status/1272941242477711361?ref_src=twsrc%5Etfw">Tue Jun 16 17:16:56 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+(なんと愚かな) https://t.co/NJNvtj8JGf
+        <a href=""></a></p>
+        &mdash; 泈助🌱低浮上🐭 (@mark_0200)
+        <a href="https://twitter.com/mark_0200/status/1272944371034288130?ref_src=twsrc%5Etfw">Tue Jun 16 17:29:22 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 ちゅんちゅん https://t.co/oLKAVNYLOF
+        <a href=""></a></p>
+        &mdash; 🌺薄井ぺら🌺 (@D_usui00)
+        <a href="https://twitter.com/D_usui00/status/1272968696005197825?ref_src=twsrc%5Etfw">Tue Jun 16 19:06:02 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+あたたかな思い出は https://t.co/tLj2j40swt
+        <a href=""></a></p>
+        &mdash; 不知火@浮上低め (@ukfire_ssk)
+        <a href="https://twitter.com/ukfire_ssk/status/1272976825799438336?ref_src=twsrc%5Etfw">Tue Jun 16 19:38:20 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 わからないよ　ロボットなんて　よぉ…… https://t.co/uS460xz6Oe
+        <a href=""></a></p>
+        &mdash; melt. (@melt73413595)
+        <a href="https://twitter.com/melt73413595/status/1273079504722751490?ref_src=twsrc%5Etfw">Wed Jun 17 02:26:21 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 目にゴミが入ったセツカ https://t.co/aU6pPxNnT8
+        <a href=""></a></p>
+        &mdash; 紫▲ (@lemoneuron_e)
+        <a href="https://twitter.com/lemoneuron_e/status/1273114261334757377?ref_src=twsrc%5Etfw">Wed Jun 17 04:44:27 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+描きたいとこだけ描いた https://t.co/JPx8sbUsKt
+        <a href=""></a></p>
+        &mdash; ぴょん (@rabi_kamone)
+        <a href="https://twitter.com/rabi_kamone/status/1273128489198260226?ref_src=twsrc%5Etfw">Wed Jun 17 05:41:00 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+ヨスガを16歳にしたらか〜とポヤポヤ考えてた落書き https://t.co/kKrvvrQ3d0
+        <a href=""></a></p>
+        &mdash; ふみ (@humi_23_)
+        <a href="https://twitter.com/humi_23_/status/1273137558281687049?ref_src=twsrc%5Etfw">Wed Jun 17 06:17:02 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 現場からは以上です https://t.co/44SGYOiDuK
+        <a href=""></a></p>
+        &mdash; ボトムズ (@BW_legyak08)
+        <a href="https://twitter.com/BW_legyak08/status/1273154158829453314?ref_src=twsrc%5Etfw">Wed Jun 17 07:23:00 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 定期的に自分の過去作キメて泣きそうになってる概念  これが公式で答えです https://t.co/j1bpRva57R
+        <a href=""></a></p>
+        &mdash; ボトムズ (@BW_legyak08)
+        <a href="https://twitter.com/BW_legyak08/status/1273154766143655938?ref_src=twsrc%5Etfw">Wed Jun 17 07:25:24 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 Natsuka Yokitogi🟦 https://t.co/vWS3Rijywi
+        <a href=""></a></p>
+        &mdash; すけお♠︎ (@sukeoroa18)
+        <a href="https://twitter.com/sukeoroa18/status/1273156041044353024?ref_src=twsrc%5Etfw">Wed Jun 17 07:30:28 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 自分で書いたのがはるか昔だから滅茶苦茶新鮮な気持ちになれる 私今これ読んでア"！？！？！？？？ってキレた https://t.co/Swi91rUZb4
+        <a href=""></a></p>
+        &mdash; ボトムズ (@BW_legyak08)
+        <a href="https://twitter.com/BW_legyak08/status/1273155941479985152?ref_src=twsrc%5Etfw">Wed Jun 17 07:30:05 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 最近絵を全く上げてないから、扉絵の進捗だけみてみてして誤魔化そう https://t.co/OgrQIRTGOX
+        <a href=""></a></p>
+        &mdash; アス🌟6/20アラタ誕 (@ASsousaku)
+        <a href="https://twitter.com/ASsousaku/status/1273156646211137536?ref_src=twsrc%5Etfw">Wed Jun 17 07:32:53 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 しわ・・・・ https://t.co/LUxrZ9h34c
+        <a href=""></a></p>
+        &mdash; すけお♠︎ (@sukeoroa18)
+        <a href="https://twitter.com/sukeoroa18/status/1273167858059677698?ref_src=twsrc%5Etfw">Wed Jun 17 08:17:26 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+さてはお風呂の時に濡れた髪はオールバックにしてるのでは https://t.co/l5EMavO335
+        <a href=""></a></p>
+        &mdash; 祭林 (@maturi_pix_1115)
+        <a href="https://twitter.com/maturi_pix_1115/status/1273167853383016449?ref_src=twsrc%5Etfw">Wed Jun 17 08:17:25 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+永遠は無いんだと 無いんだと云フ https://t.co/Obdvg5iCpr
+        <a href=""></a></p>
+        &mdash; 🐊茄子！ (@nassan195)
+        <a href="https://twitter.com/nassan195/status/1273167966486626304?ref_src=twsrc%5Etfw">Wed Jun 17 08:17:52 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 五層時代、ご近所のお兄さんと勉強会をしていました🖊️ https://t.co/7Ft691waoI
+        <a href=""></a></p>
+        &mdash; オレンジペコ (@pecco_ASK)
+        <a href="https://twitter.com/pecco_ASK/status/1273174335788892165?ref_src=twsrc%5Etfw">Wed Jun 17 08:43:10 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 世界の奥の 　限りない優しさ https://t.co/KiENJnHSgK
+        <a href=""></a></p>
+        &mdash; のの🍓こ (@11xteto)
+        <a href="https://twitter.com/11xteto/status/1273179442026819584?ref_src=twsrc%5Etfw">Wed Jun 17 09:03:28 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 ぼーっとしてると髪をいじる癖が稀にるナズナ https://t.co/b1DQdKOHV5
+        <a href=""></a></p>
+        &mdash; あもまも (@mamama_222Wf)
+        <a href="https://twitter.com/mamama_222Wf/status/1273183979215007745?ref_src=twsrc%5Etfw">Wed Jun 17 09:21:29 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 幼なじみ幼少期 https://t.co/cX69NnNyto
+        <a href=""></a></p>
+        &mdash; 蓮宮🐟(シングルタスク) (@hasumiya723)
+        <a href="https://twitter.com/hasumiya723/status/1273183719415640064?ref_src=twsrc%5Etfw">Wed Jun 17 09:20:27 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 描き方メモ https://t.co/av8HHzgGvP
+        <a href=""></a></p>
+        &mdash; あもまも (@mamama_222Wf)
+        <a href="https://twitter.com/mamama_222Wf/status/1273189613691998208?ref_src=twsrc%5Etfw">Wed Jun 17 09:43:53 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 ナズナ少年期 https://t.co/WGw6prJlAm
+        <a href=""></a></p>
+        &mdash; あもまも (@mamama_222Wf)
+        <a href="https://twitter.com/mamama_222Wf/status/1273191279401136129?ref_src=twsrc%5Etfw">Wed Jun 17 09:50:30 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 どーしてもビミョーに違和感修正できないからこれは没行きCS用だった立ち絵…誰か赤ペンシテ…直描きしていいから頼むフォロワー…orz https://t.co/cleq71Wk3e
+        <a href=""></a></p>
+        &mdash; ⚠️ふちこ (@fuchichi_titti)
+        <a href="https://twitter.com/fuchichi_titti/status/1273197416062152704?ref_src=twsrc%5Etfw">Wed Jun 17 10:14:53 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@fuchichi_titti @ROA2120 ちょっと描いてみましたが参考までで…！ https://t.co/Zo5MqJGqBj
+        <a href=""></a></p>
+        &mdash; 🐧 (@Hibi_k_k)
+        <a href="https://twitter.com/Hibi_k_k/status/1273207434962591745?ref_src=twsrc%5Etfw">Wed Jun 17 10:54:42 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120
+ひねれくれカナデのお返し
+リンゴさん編(1/2) https://t.co/0Um9PQeooL
+        <a href=""></a></p>
+        &mdash; CABIN.8mg (@CABIN_8mg)
+        <a href="https://twitter.com/CABIN_8mg/status/1273215341343080450?ref_src=twsrc%5Etfw">Wed Jun 17 11:26:07 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">⁦@ROA2120⁩ https://t.co/kBVer0Zi7u
+        <a href=""></a></p>
+        &mdash; ちかばの倉庫 (@tyucannbot)
+        <a href="https://twitter.com/tyucannbot/status/1273217052946214912?ref_src=twsrc%5Etfw">Wed Jun 17 11:32:55 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+煙とワンピースの話① https://t.co/kwFwA4znAj
+        <a href=""></a></p>
+        &mdash; †救われたくばCSを描きなさい† (@bias_kikaku)
+        <a href="https://twitter.com/bias_kikaku/status/1273228609306558464?ref_src=twsrc%5Etfw">Wed Jun 17 12:18:50 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+ヨスガ16歳…？🤔 https://t.co/bX8zMGU0PO
+        <a href=""></a></p>
+        &mdash; ふみ (@humi_23_)
+        <a href="https://twitter.com/humi_23_/status/1273232074061737984?ref_src=twsrc%5Etfw">Wed Jun 17 12:32:36 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 サムネイル、丁度よく切れるな https://t.co/WwLeJwhmjd
+        <a href=""></a></p>
+        &mdash; のの🍓こ (@11xteto)
+        <a href="https://twitter.com/11xteto/status/1273234890771689472?ref_src=twsrc%5Etfw">Wed Jun 17 12:43:48 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 チョウスケ一番最初、苗字は一天満谷だったんだけど、いさおさんに「氵付きになってるよ！！？！」て教えてもらって爆笑しながら適当に選んできて熊野御堂になりました https://t.co/okV9XH3EkN
+        <a href=""></a></p>
+        &mdash; おとっぱ (@108to8)
+        <a href="https://twitter.com/108to8/status/1273237909878030338?ref_src=twsrc%5Etfw">Wed Jun 17 12:55:47 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 https://t.co/VlWffzBuiP
+        <a href=""></a></p>
+        &mdash; ベクトル汍☀️ (@S_O_D_A_soffice)
+        <a href="https://twitter.com/S_O_D_A_soffice/status/1273239848531312640?ref_src=twsrc%5Etfw">Wed Jun 17 13:03:30 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+女子……… https://t.co/HwHleVGhL1
+        <a href=""></a></p>
+        &mdash; ぺりこ (@perico0_0)
+        <a href="https://twitter.com/perico0_0/status/1273241060949417984?ref_src=twsrc%5Etfw">Wed Jun 17 13:08:19 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 マツリ・イノリの父母(故人)
+等々力になる前の旧姓は考えてない… https://t.co/Hw6nnr9kNP
+        <a href=""></a></p>
+        &mdash; ぽくすけ@潜航 (@senko_poku)
+        <a href="https://twitter.com/senko_poku/status/1273240768325406722?ref_src=twsrc%5Etfw">Wed Jun 17 13:07:09 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 こっちのが？？？ https://t.co/S765QvEJjd
+        <a href=""></a></p>
+        &mdash; 樹木🚀🌏7?/8 (@xvx_h000)
+        <a href="https://twitter.com/xvx_h000/status/1273242580461875200?ref_src=twsrc%5Etfw">Wed Jun 17 13:14:21 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 アトランティスねりねりした https://t.co/o2yFbewYuQ
+        <a href=""></a></p>
+        &mdash; 荒城雨夜 (@arakiameya)
+        <a href="https://twitter.com/arakiameya/status/1273242336625975297?ref_src=twsrc%5Etfw">Wed Jun 17 13:13:23 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 潜航 https://t.co/JAqTI5Pd4w
+        <a href=""></a></p>
+        &mdash; 樹木🚀🌏7?/8 (@xvx_h000)
+        <a href="https://twitter.com/xvx_h000/status/1273241986485501954?ref_src=twsrc%5Etfw">Wed Jun 17 13:11:59 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 ウワァ.......(ウワァ.......)# ウワァ....... https://t.co/ROUn4HEpAq
+        <a href=""></a></p>
+        &mdash; かるめや (@karumeya_cas)
+        <a href="https://twitter.com/karumeya_cas/status/1273245608443211776?ref_src=twsrc%5Etfw">Wed Jun 17 13:26:23 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+草 クオンハトサキと足して2で割ろうぜ https://t.co/9k8XiDVDbG
+        <a href=""></a></p>
+        &mdash; ぴょん (@rabi_kamone)
+        <a href="https://twitter.com/rabi_kamone/status/1273246295721836544?ref_src=twsrc%5Etfw">Wed Jun 17 13:29:07 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 おびんじょしました  大吉！ https://t.co/hm75cPKymX
+        <a href=""></a></p>
+        &mdash; 豆宮 うめこ (@umeko_0731)
+        <a href="https://twitter.com/umeko_0731/status/1273246199546392577?ref_src=twsrc%5Etfw">Wed Jun 17 13:28:44 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 反射神経テストほい！ https://t.co/V7Dn0P0gxp
+        <a href=""></a></p>
+        &mdash; のっさま (@pari2_piyochi)
+        <a href="https://twitter.com/pari2_piyochi/status/1273248850656935936?ref_src=twsrc%5Etfw">Wed Jun 17 13:39:16 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 涙 https://t.co/jTXwKbxeXx
+        <a href=""></a></p>
+        &mdash; すけお♠︎ (@sukeoroa18)
+        <a href="https://twitter.com/sukeoroa18/status/1273248818268499970?ref_src=twsrc%5Etfw">Wed Jun 17 13:39:08 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 これは後で消すんですが、ちゃんとほぼ全身描いたよ… https://t.co/XFuiTbPEJQ
+        <a href=""></a></p>
+        &mdash; 樹木🚀🌏7?/8 (@xvx_h000)
+        <a href="https://twitter.com/xvx_h000/status/1273248346853924864?ref_src=twsrc%5Etfw">Wed Jun 17 13:37:16 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120  タテハの家族運よ https://t.co/EgkbiCXphe
+        <a href=""></a></p>
+        &mdash; melt. (@melt73413595)
+        <a href="https://twitter.com/melt73413595/status/1273248244659662848?ref_src=twsrc%5Etfw">Wed Jun 17 13:36:51 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 恋愛のこの辺は多分本当にそう（あとで消します） https://t.co/y9AEMj2DHQ
+        <a href=""></a></p>
+        &mdash; 不知火@浮上低め (@ukfire_ssk)
+        <a href="https://twitter.com/ukfire_ssk/status/1273251101563695106?ref_src=twsrc%5Etfw">Wed Jun 17 13:48:13 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120
+カナデ坊やの仕返し(1/3) https://t.co/fTVxLnvHkP
+        <a href=""></a></p>
+        &mdash; CABIN.8mg (@CABIN_8mg)
+        <a href="https://twitter.com/CABIN_8mg/status/1273251029966942209?ref_src=twsrc%5Etfw">Wed Jun 17 13:47:56 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+姓名診断のみをみるとロストの可能性がより濃厚になるユヅリ https://t.co/VM3ywcvfDZ
+        <a href=""></a></p>
+        &mdash; 紫月 (@shidukutt)
+        <a href="https://twitter.com/shidukutt/status/1273250553988968449?ref_src=twsrc%5Etfw">Wed Jun 17 13:46:02 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 進捗です https://t.co/rTHQrLsuvs
+        <a href=""></a></p>
+        &mdash; アス🌟6/20アラタ誕 (@ASsousaku)
+        <a href="https://twitter.com/ASsousaku/status/1273252563215716354?ref_src=twsrc%5Etfw">Wed Jun 17 13:54:01 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@lt1380 @ROA2120 わ！ダブルMだー！！！！うちらゎマゾ幼なじみ！！
+機嫌損ねた彼女笑う… https://t.co/WqPrxmnEDE
+        <a href=""></a></p>
+        &mdash; のっさま (@pari2_piyochi)
+        <a href="https://twitter.com/pari2_piyochi/status/1273252235359612928?ref_src=twsrc%5Etfw">Wed Jun 17 13:52:43 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 いいのか悪いのかどっちなんだこれ https://t.co/mvvXvZDyHX
+        <a href=""></a></p>
+        &mdash; ｶｶﾞﾁ (@kagayakuchi)
+        <a href="https://twitter.com/kagayakuchi/status/1273253936359596035?ref_src=twsrc%5Etfw">Wed Jun 17 13:59:28 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 あったわ　https://t.co/ZueVJckEJO
+        <a href=""></a></p>
+        &mdash; からしぎ (@k_arashig_i)
+        <a href="https://twitter.com/k_arashig_i/status/1273254348848390148?ref_src=twsrc%5Etfw">Wed Jun 17 14:01:07 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 …割と当たってるのでは？疑惑 https://t.co/B964sbmuHi
+        <a href=""></a></p>
+        &mdash; ｶｶﾞﾁ (@kagayakuchi)
+        <a href="https://twitter.com/kagayakuchi/status/1273255275831549953?ref_src=twsrc%5Etfw">Wed Jun 17 14:04:48 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120
+泳 キッカさんの診断結果 - 姓名判断 彩 https://t.co/WNp3xMi09D
+あたってんじゃねーか！！！おいおいおい!!!!!!!!!!!!! https://t.co/NRf2Eoth9R
+        <a href=""></a></p>
+        &mdash; たみなり (@hhwssr)
+        <a href="https://twitter.com/hhwssr/status/1273254935593811968?ref_src=twsrc%5Etfw">Wed Jun 17 14:03:27 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 無加工耐えられなかったからアコヤだけ加工して持ってきた https://t.co/VMynEnNqBV
+        <a href=""></a></p>
+        &mdash; 樹木🚀🌏終わったぞーーーー！ (@xvx_h000)
+        <a href="https://twitter.com/xvx_h000/status/1273255852082728960?ref_src=twsrc%5Etfw">Wed Jun 17 14:07:05 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 マツリカの結果にわらってしまった… https://t.co/HMlLz2UGbJ
+        <a href=""></a></p>
+        &mdash; ひさな (@kikax_xhisa)
+        <a href="https://twitter.com/kikax_xhisa/status/1273256799773155333?ref_src=twsrc%5Etfw">Wed Jun 17 14:10:51 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+えっなにお前、仕事運凶だけど何死ぬの https://t.co/jFZUAZhDbH
+        <a href=""></a></p>
+        &mdash; (とあるa) (@toarua_PF)
+        <a href="https://twitter.com/toarua_PF/status/1273256390778187782?ref_src=twsrc%5Etfw">Wed Jun 17 14:09:14 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 義弟妹 https://t.co/05fVEbQ8vl
+        <a href=""></a></p>
+        &mdash; 馬肉 (@BANIKUc)
+        <a href="https://twitter.com/BANIKUc/status/1273257577497812992?ref_src=twsrc%5Etfw">Wed Jun 17 14:13:57 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 アラタでやってみたら「個別の画数は悪くないのに総画数で台無し」感がすごかった https://t.co/TCDc2gw8iw
+        <a href=""></a></p>
+        &mdash; アス🌟6/20アラタ誕 (@ASsousaku)
+        <a href="https://twitter.com/ASsousaku/status/1273257825003696128?ref_src=twsrc%5Etfw">Wed Jun 17 14:14:56 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@lt1380 @ROA2120 マゾなじみwwwwwwどことなく響きがエッチじゃないですか？！
+意地悪言わないで〜😂笑 マユミ信じないけど、本当に話しかけたりしてもらえなくなったら多分ソワソワします… https://t.co/u2rgc7wc9q
+        <a href=""></a></p>
+        &mdash; のっさま (@pari2_piyochi)
+        <a href="https://twitter.com/pari2_piyochi/status/1273259252463751169?ref_src=twsrc%5Etfw">Wed Jun 17 14:20:36 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+潜航機動隊をアイドルだと思ってる
+(チームB推しの歌詞のやつ) https://t.co/ItCo9SiEWF
+        <a href=""></a></p>
+        &mdash; しの (@1_ogsn)
+        <a href="https://twitter.com/1_ogsn/status/1273260049058549760?ref_src=twsrc%5Etfw">Wed Jun 17 14:23:46 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+私はCSも描かずに何を描いているんだ……？？？？？タロットカードです https://t.co/rrv2785AYF
+        <a href=""></a></p>
+        &mdash; きな🐴🐴 (@kikiyo_senco)
+        <a href="https://twitter.com/kikiyo_senco/status/1273260040791588864?ref_src=twsrc%5Etfw">Wed Jun 17 14:23:44 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120 
+(泣いてる) https://t.co/2IlYvzZMtL
+        <a href=""></a></p>
+        &mdash; 元凶 (@Genomukyo_07)
+        <a href="https://twitter.com/Genomukyo_07/status/1273261977087836161?ref_src=twsrc%5Etfw">Wed Jun 17 14:31:26 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120
+第1大隊のみんなの名前書きました。(多分全員…写ってないけど)
+スプレッドシート前に書き始めたので第1大隊タグの投稿順で… https://t.co/LUOGFLAf7b
+        <a href=""></a></p>
+        &mdash; 櫻華 (@tw_tk_kk)
+        <a href="https://twitter.com/tw_tk_kk/status/1273263710874689538?ref_src=twsrc%5Etfw">Wed Jun 17 14:38:19 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+    <div class="col-sm-3">
+      <blockquote class="twitter-tweet" data-conversation="none">
+      <p lang="ja" dir="ltr">@ROA2120
+これはナゾノ＝ガンジョー・ロッカーに閉じ込められてしまった🐊(16)🦔(13) https://t.co/sFVq8keACd
+        <a href=""></a></p>
+        &mdash; 🦔茂茸！ (@mj_cre)
+        <a href="https://twitter.com/mj_cre/status/1273265583031676928?ref_src=twsrc%5Etfw">Wed Jun 17 14:45:45 +0000 2020</a>
+      </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  
+</div>
+                    
+                  <hr />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167974216-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-167974216-1');
+    </script>
+
+  </body>
+</html>
